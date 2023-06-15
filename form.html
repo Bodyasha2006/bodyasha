@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Анкета</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            font-size: large;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #654321;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 30%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body style="background-color: #f7e7ce;">
+    <header>
+        <p style="color: rgb(0, 0, 0); font-size: 50px;">My form</p>
+    </header>
+
+    <main>
+        <p style="text-align: center;"><form action="submit.php" method="POST">
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="age">Your age:</label>
+            <input type="text" id="age" name="age" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            
+        </form>
+        </p>
+    </main>
+<p style="text-align: center;"><br>
+<button onclick="alert('Thanks for filling my form!')">Send result</button>
+<br>
+</p>
+<div style="font-size: 35px; text-align: center;">
+    <ul style="text-align: center;">
+        <li style="text-align: center;"><a href="border.html">Бордер-Коллі</a></li>
+        <li style="text-align: center;"><a href="shepard.html">Австралійська Вівчарка</a></li>
+        <li style="text-align: center;"><a href="index.html">Назад на головну</a></li>
+        
+    </ul>
+</div>
+</body>
+</html>
